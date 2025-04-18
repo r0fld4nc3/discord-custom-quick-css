@@ -2,7 +2,7 @@
 
 /* Credit: scabau :3 (scattagain), BB-8 (starflight44) */
 :root {
-    --guildbar-avatar-size: 40px !important;
+    --guildbar-avatar-size: 48px !important;
 }
 
 .visual-refresh nav[class*="guilds_"] {
@@ -13,9 +13,9 @@
     } */
     
     [class*="listItem__"] {
-        /*defs > path {
+        defs > path {
             d: path("M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z");
-        }*/
+        }
 
         [class*="childWrapper__"] > svg {
             width: 25px;
@@ -26,7 +26,7 @@
         [class*="childWrapper__"] img,
         [class*="icon_"],
         [class*="circleIconButton__"] {
-            border-radius: 40% !important; /* Unselected folder(s) server icons border radius */
+            border-radius: 35% !important; /* Unselected folder(s) server icons border radius */
             transition: border-radius 150ms;
         }
 
@@ -35,7 +35,7 @@
             [class*="childWrapper__"] img,
             [class*="icon_"],
             [class*="circleIconButton__"] {
-                border-radius: 50% !important; /* Selected/Hovered folder server icons border radius */
+                border-radius: 25% !important; /* Selected/Hovered folder server icons border radius */
                 transition: border-radius 150ms;
             }
         }
@@ -45,8 +45,8 @@
             left: 0px;
 
             foreignObject {
-                width: calc(var(--guildbar-avatar-size) + 8px); /* Compensate expanded scale */
-                height: calc(var(--guildbar-avatar-size) + 8px); /* Compensate expanded scale */
+                width: var(--guildbar-avatar-size);
+                height: var(--guildbar-avatar-size);
                 transform: translate(-4px, -4px);
             }
 
