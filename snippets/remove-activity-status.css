@@ -1,7 +1,6 @@
-/* Thanks to Quick CSS Discord for a lot of these quick snippet fixes */
+/* Thanks to css-snippets channel in Vencord's Discord for a lot of these quick snippet fixes */
 
-/* Fuck Activity Status */
-/* Credit: lusaffi (LuLu) */
+/* Credit: LuLu (lusaffi) */
 [class*='membersGroup']:has([role=button]),
 [class*='member']
 [class*='container']:has([class*='badges']) {

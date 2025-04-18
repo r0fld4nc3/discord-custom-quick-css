@@ -1,7 +1,6 @@
-/* Thanks to Quick CSS Discord for a lot of these quick snippet fixes */
+/* Thanks to css-snippets channel in Vencord's Discord for a lot of these quick snippet fixes */
 
-/* Fix User Area and Navbar Covering up so much space!! */
-/* Credit: evie */
+/* Credit: evie (evie.flowers) */
 .visual-refresh section[aria-label="User area"] {
     /*width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);;*/
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 15px);;
