@@ -1,53 +1,17 @@
-/* Thanks to Quick CSS Discord for a lot of these quick snippet fixes */
-
 /* Compact/Hide Visual Refresh Title Bar */
-/* Credit: CholoLive CTuber: Chloe */
-@import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
+@import url('https://raw.githubusercontent.com/r0fld4nc3/discord-custom-quick-css/refs/heads/main/snippets/visual-refresh-title-bar.css');
 
-/* Fix User Area and Navbar Covering up so much space!! */
-/* Credit: evie */
-.visual-refresh section[aria-label="User area"] {
-    /*width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);;*/
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 15px);;
-    left: calc(var(--custom-guild-list-width) + 2%);
-    /*bottom: 0px;*/
-    /*border-radius: 0px;*/
-    /*border: none;*/
-}
-
-.visual-refresh nav:has([data-list-id="guildsnav"]) {
-    margin-bottom: unset;
-}
+/* Fix User Area and Navbar */
+@import url('https://raw.githubusercontent.com/r0fld4nc3/discord-custom-quick-css/refs/heads/main/snippets/user-area-navbar.css');
 
 /* Fix message Detailed Timestamps */
-/* Credit: puhbu (fake one) */
-span[class*='timestampInline_'] time::before {
-    content: attr(aria-label);
-    font-size: 12px;
-}
+@import url('https://raw.githubusercontent.com/r0fld4nc3/discord-custom-quick-css/refs/heads/main/snippets/timestamps.css');
 
-span[class*='timestampInline_'] {
-    font-size: 0px !important;
-}
-
-/* Fuck Activity Status */
-/* Credit: lusaffi (LuLu) */
-[class*='membersGroup']:has([role=button]),
-[class*='member']
-[class*='container']:has([class*='badges']) {
-    display: none;
-}
+/* Fix Activity Status */
+@import url('https://raw.githubusercontent.com/r0fld4nc3/discord-custom-quick-css/refs/heads/main/snippets/remove-activity-status.css');
 
 /* Remove Quick React Bar */
-/* Credit: the.better.altefffour (ALT + F4) */
-.button_f7ecac.hoverBarButton_f84418:nth-of-type(1),
-.button_f7ecac.hoverBarButton_f84418:nth-of-type(2),
-.button_f7ecac.hoverBarButton_f84418:nth-of-type(3),
-.separator_f84418 {
-    display: none;
-}
+@import url('https://raw.githubusercontent.com/r0fld4nc3/discord-custom-quick-css/refs/heads/main/snippets/remove-quick-reaction-bar.css');
 
-/* Fix text area */
-.visual-refresh div[class*="channelTextArea_"] {
-    margin: 10px;
-}
+/* Fix Text Area */
+@import url('https://raw.githubusercontent.com/r0fld4nc3/discord-custom-quick-css/refs/heads/main/snippets/fix-text-area.css');
