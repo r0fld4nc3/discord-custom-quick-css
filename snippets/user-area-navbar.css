@@ -1,0 +1,16 @@
+/* Thanks to Quick CSS Discord for a lot of these quick snippet fixes */
+
+/* Fix User Area and Navbar Covering up so much space!! */
+/* Credit: evie */
+.visual-refresh section[aria-label="User area"] {
+    /*width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);;*/
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 15px);;
+    left: calc(var(--custom-guild-list-width) + 2%);
+    /*bottom: 0px;*/
+    /*border-radius: 0px;*/
+    /*border: none;*/
+}
+
+.visual-refresh nav:has([data-list-id="guildsnav"]) {
+    margin-bottom: unset;
+}

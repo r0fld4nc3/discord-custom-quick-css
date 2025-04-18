@@ -1,0 +1,4 @@
+/* Fix text area */
+.visual-refresh div[class*="channelTextArea_"] {
+    margin: 10px;
+}

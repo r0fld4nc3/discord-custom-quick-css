@@ -1,0 +1,12 @@
+/* Thanks to Quick CSS Discord for a lot of these quick snippet fixes */
+
+/* Fix message Detailed Timestamps */
+/* Credit: puhbu (fake one) */
+span[class*='timestampInline_'] time::before {
+    content: attr(aria-label);
+    font-size: 12px;
+}
+
+span[class*='timestampInline_'] {
+    font-size: 0px !important;
+}

@@ -1,0 +1,9 @@
+/* Thanks to Quick CSS Discord for a lot of these quick snippet fixes */
+
+/* Fuck Activity Status */
+/* Credit: lusaffi (LuLu) */
+[class*='membersGroup']:has([role=button]),
+[class*='member']
+[class*='container']:has([class*='badges']) {
+    display: none;
+}
