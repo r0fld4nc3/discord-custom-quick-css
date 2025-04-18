@@ -5,11 +5,16 @@
     /*width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);;*/
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 15px);;
     left: calc(var(--custom-guild-list-width) + 2%);
-    bottom: 1.3%;
+    bottom: 2%;
     /*border-radius: 0px;*/
     /*border: none;*/
 }
 
 .visual-refresh nav:has([data-list-id="guildsnav"]) {
     margin-bottom: unset;
+}
+
+/* Channel Scroller Cutout Fix */
+div[class*='scroller__'][orientation="vertical"][tabindex="0"][data-jump-section="global"] {
+    margin-bottom: 8%;
 }
