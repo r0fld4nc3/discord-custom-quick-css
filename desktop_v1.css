@@ -1,9 +1,11 @@
 /* Thanks to Quick CSS Discord for a lot of these quick snippet fixes */
 
 /* Compact/Hide Visual Refresh Title Bar */
+/* Credit: CholoLive CTuber: Chloe */
 @import url('https://raw.githubusercontent.com/surgedevs/visual-refresh-compact-title-bar/refs/heads/main/desktop.css');
 
 /* Fix User Area and Navbar Covering up so much space!! */
+/* Credit: evie */
 .visual-refresh section[aria-label="User area"] {
     /*width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);;*/
     width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 15px);;
@@ -18,6 +20,7 @@
 }
 
 /* Fix message Detailed Timestamps */
+/* Credit: puhbu (fake one) */
 span[class*='timestampInline_'] time::before {
     content: attr(aria-label);
     font-size: 12px;
@@ -28,6 +31,7 @@ span[class*='timestampInline_'] {
 }
 
 /* Fuck Activity Status */
+/* Credit: lusaffi (LuLu) */
 [class*='membersGroup']:has([role=button]),
 [class*='member']
 [class*='container']:has([class*='badges']) {
@@ -35,6 +39,7 @@ span[class*='timestampInline_'] {
 }
 
 /* Remove Quick React Bar */
+/* Credit: the.better.altefffour (ALT + F4) */
 .button_f7ecac.hoverBarButton_f84418:nth-of-type(1),
 .button_f7ecac.hoverBarButton_f84418:nth-of-type(2),
 .button_f7ecac.hoverBarButton_f84418:nth-of-type(3),
