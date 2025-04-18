@@ -1,0 +1,5 @@
+.visual-refresh nav[class*="guilds_"] {
+    [class*="expandedFolderBackground"] {
+        border: 1px solid gray;
+    }
+}
